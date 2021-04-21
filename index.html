@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100vw;
+            height: 90vh;
+        }
+
+        #footer {
+            background-color: black;
+            height: 75px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 7px 6px 5px;
+        }
+    </style>
+    <title>Covid Tracker</title>
+</head>
+
+<body>
+    <div id='map'></div>
+
+</body>
+<footer>
+    <footer id="footer">Copyright © 2021
+        <a href="https://in.linkedin.com/in/vivekdxt" style="color: #0000FF;">Vivek Dixit</a>
+    </footer>
+</footer>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoidml2ZWtkaXhpdDI2NSIsImEiOiJja25nM3JyazExZTQ1MnBvN2pzbmN2dTMyIn0.2XZlhLDtxFc-p71q7aa2Fw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom:1,
+        center: [10, 50]
+    });
+</script>
+
+<script src="index.js"></script>
+
+</html>
+
+
+</script>
